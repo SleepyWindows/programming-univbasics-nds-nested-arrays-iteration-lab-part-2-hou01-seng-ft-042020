@@ -8,8 +8,8 @@ def find_min_in_nested_arrays(src)
         if src[row_index][element_index] < lowest_value
           lowest_value = src[row_index][element_index]
         end
+        element_index += 1
       end
-      element_index += 1
   end
   row_index += 1
   outer_results << lowest_value
